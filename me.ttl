@@ -1,0 +1,21 @@
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl/> .
+
+<https://nics.github.io/#me> a foaf:Person ;
+      foaf:name "Nicolas Steenlant" ;
+      foaf:familyName "Steenlant" ;
+      foaf:givenName "Nicolas" ;
+      foaf:nick "nics" ;
+      owl:sameAs <https://orcid.org/0000-0002-4268-8355> ;
+      schema:email "nicolas.steenlant@ugent.be", "nicolas.steenlant@proton.me" ;
+      schema:homeLocation <https://www.wikidata.org/wiki/Q1296> ;
+      foaf:knows <https://razoreater.github.io/iam/>, 
+                 <https://nicovervaeck.github.io/#me>,
+                 <https://colada.be/#me>,
+                 <https://stijnoosterlinck.github.io/#me>,
+                 <https://brakke.net/#nil>,
+                 <https://users.ugent.be/~alatinis/> ;
+      foaf:workplaceHomepage <http://lib.ugent.be> ;
+      schema:colleague <https://colada.be/#me> ;
+      schema:attendee <https://pietercolpaert.be/teaching/kg/#2023-2024> .
