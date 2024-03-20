@@ -9,32 +9,32 @@ photos:
 photos:Photo
     a rdfs:Class, owl:Class ;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "Photo" ;
+    rdfs:label "Photo"@en ;
     owl:equivalentClass foaf:Image .
 
 photos:title
     a rdfs:Property, owl:DatatypeProperty ;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "title" ;
+    rdfs:label "title"@en ;
     rdfs:domain photos:Photo ;
     rdfs:range rdfs:Literal .
 
 photos:depicts
     a rdfs:Property, owl:ObjectProperty ;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "depicts" ;
+    rdfs:label "depicts"@en ;
     rdfs:domain photos:Photo ;
     rdfs:range photos:Person .
 
 photos:Person
     a rdfs:Class, owl:Class ;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "Person" ;
+    rdfs:label "Person"@en ;
     owl:equivalentClass foaf:Person .
 
 photos:name
     a rdfs:Property, owl:DatatypeProperty;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "name" ;
+    rdfs:label "name"@en ;
     rdfs:domain photos:Person ;
     rdfs:range rdfs:Literal .
