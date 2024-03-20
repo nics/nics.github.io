@@ -1,0 +1,38 @@
+@prefix photos: <https://nics.github.io/vocabularies/photos> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+photos:
+  a owl:Ontology .
+
+photos:Photo
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy photos: ;
+    rdfs:label "Photo" .
+
+photos:title
+    a rdfs:Property, owl:DatatypeProperty ;
+    rdfs:isDefinedBy photos: ;
+    rdfs:label "title" ;
+    rdfs:domain photos:Photo ;
+    rdfs:range rdfs:Literal .
+
+photos:depicts
+    a rdfs:Property, owl:ObjectProperty ;
+    rdfs:isDefinedBy photos: ;
+    rdfs:label "depicts" ;
+    rdfs:domain photos:Photo ;
+    rdfs:range photos:Person .
+
+photos:Person
+    a rdfs:Class, owl:Class ;
+    rdfs:isDefinedBy photos: ;
+    rdfs:label "Person" .
+
+photos:name
+    a rdfs:Property, owl:DatatypeProperty;
+    rdfs:isDefinedBy photos: ;
+    rdfs:label "name" ;
+    rdfs:domain photos:Person ;
+    rdfs:range rdfs:Literal .

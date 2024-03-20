@@ -1,6 +1,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl/> .
+@prefix photos: <https://nics.github.io/vocabularies/photos.ttl> .
 
 <https://nics.github.io/#me> a foaf:Person ;
       foaf:name "Nicolas Steenlant" ;
@@ -19,3 +20,6 @@
       foaf:workplaceHomepage <http://lib.ugent.be> ;
       schema:colleague <https://colada.be/#me> ;
       schema:attendee <https://pietercolpaert.be/teaching/kg/#2023-2024> .
+
+<https://nics.github.io/pictures/slug.jpg> photos:depicts <https://nics.github.io/#me>;
+    photos:title "Me dressed as a pink slug" .
