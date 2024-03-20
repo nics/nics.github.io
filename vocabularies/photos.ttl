@@ -9,7 +9,8 @@ photos:
 photos:Photo
     a rdfs:Class, owl:Class ;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "Photo" .
+    rdfs:label "Photo" ;
+    owl:equivalentClass foaf:Image .
 
 photos:title
     a rdfs:Property, owl:DatatypeProperty ;
@@ -28,7 +29,8 @@ photos:depicts
 photos:Person
     a rdfs:Class, owl:Class ;
     rdfs:isDefinedBy photos: ;
-    rdfs:label "Person" .
+    rdfs:label "Person" ;
+    owl:equivalentClass foaf:Person .
 
 photos:name
     a rdfs:Property, owl:DatatypeProperty;
